@@ -1,35 +1,33 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useRef, useState } from "react"
+import logo from "../images/NLF-Logo-Final.svg"
+import NLFCopy from "../content/content"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import useOnClickOutside from "./Custom Hooks"
+
+import Burger from "./Burger"
+import BurgerMenu from "./BurgerMenu"
+import css from "./Header.module.css"
+
+function Header() {
+  const [open, setOpen] = useState(false)
+  const node = useRef()
+  useOnClickOutside(node, () => setOpen(false))
+
+  return (
+    <div className={css.headContainer} ref={node}>
+      <Link to="/">
+        <img src={logo} className={css.headLogo} />
+      </Link>
+      <a href={NLFCopy.ContactDetails.phone} className={css.callBtn}>
+        Call Us
+      </a>
+      <Burger open={open} setOpen={setOpen} />
+      <BurgerMenu open={open} setOpen={setOpen} />
     </div>
-  </header>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

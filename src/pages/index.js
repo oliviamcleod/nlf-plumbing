@@ -1,22 +1,51 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import InfoBox from "../components/InfoBox"
+import BlogBox from "../components/BlogBox"
+import GalleryBox from "../components/GalleryBox"
+import Layout from "../components/Layout"
+import TradeLogoDisplay from "../components/TradeLogoDisplay"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+import NLFCopy from "../content/content.js"
+import GasSafeLogo from "../components/GasSafe"
+
+function IndexPage() {
+  return (
+    // <SEO title="Home" />
+    <Layout>
+      <BlogBox
+        blogText={NLFCopy.BlogBox.headline}
+        altText={NLFCopy.BlogBox.altText}
+        blogImg={NLFCopy.BlogBox.image}
+      />
+      <InfoBox
+        title={NLFCopy.Box1.title}
+        page={NLFCopy.Box1.link}
+        main={NLFCopy.Box1.content}
+      />
+      <GalleryBox
+        title={NLFCopy.Box2.title}
+        page={NLFCopy.Box2.link}
+        main={NLFCopy.Box2.content}
+      />
+      <InfoBox
+        title={NLFCopy.Box3.title}
+        page={NLFCopy.Box3.link}
+        main={NLFCopy.Box3.content1}
+        column1={NLFCopy.Box3.content2}
+        column2={NLFCopy.Box3.content3}
+      />
+      <InfoBox
+        title={NLFCopy.Box4.title}
+        page={NLFCopy.Box4.link}
+        main={NLFCopy.Box4.content}
+        carousel={NLFCopy.Box4.reviews}
+      />
+      <TradeLogoDisplay />
+      <GasSafeLogo />
+    </Layout>
+  )
+}
 
 export default IndexPage

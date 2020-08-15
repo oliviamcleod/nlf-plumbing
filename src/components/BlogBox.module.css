@@ -1,0 +1,26 @@
+.blogBoxContainer {
+  position: relative;
+  display: block;
+  height: 10rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.imgContainer {
+}
+
+.blogImg {
+  /* height: 15vh; */
+
+  height: 20vh;
+
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+
+.blogText {
+  color: black;
+  font-size: 0.8rem;
+}

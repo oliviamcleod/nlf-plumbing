@@ -1,0 +1,30 @@
+.infoBox {
+  height: auto;
+  background-color: var(--blue);
+  background-image: linear-gradient(to right, var(--blue), rgb(143, 149, 241));
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.title {
+  position: relative;
+  margin: 0 auto;
+}
+
+.main {
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.photo {
+  height: 200px;
+  width: 200px;
+  margin: 2rem;
+}

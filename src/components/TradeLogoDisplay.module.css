@@ -1,0 +1,13 @@
+.trades {
+  margin: auto;
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+}
+
+.tradeSml {
+  position: relative;
+  margin: 0 auto;
+  height: 30px;
+}

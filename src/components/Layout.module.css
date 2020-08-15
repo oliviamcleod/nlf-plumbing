@@ -1,3 +1,7 @@
+.main {
+  min-height: 60vh;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -198,7 +202,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
+/* body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
@@ -384,7 +388,6 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 figure {
   margin-left: 0;
@@ -575,11 +578,11 @@ th {
   -moz-font-feature-settings: "tnum";
   -ms-font-feature-settings: "tnum";
   -webkit-font-feature-settings: "tnum";
-  padding-left: 0.96667rem;
-  padding-right: 0.96667rem;
+  padding-left: 0.96667rem; */
+/* padding-right: 0.96667rem;
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
-}
+} */
 th:first-child,
 td:first-child {
   padding-left: 0;
