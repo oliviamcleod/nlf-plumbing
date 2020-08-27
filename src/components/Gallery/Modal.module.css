@@ -1,0 +1,23 @@
+.image {
+  position: relative;
+  height: 50vh;
+  left: 50%;
+  transform: translate(-50%);
+  object-fit: cover;
+}
+.carousel {
+  background-color: var(--blue);
+  padding: 1rem;
+}
+
+@media (min-width: 576px) {
+  .image {
+    height: 35vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .image {
+    height: 18vw;
+  }
+}

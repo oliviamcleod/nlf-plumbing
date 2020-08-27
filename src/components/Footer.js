@@ -8,8 +8,24 @@ function Footer() {
   return (
     <div className={css.footContainer}>
       <div className={css.links}>
-        <Link>who we are </Link>|<Link> services </Link>|<Link> gallery </Link>|
-        <Link> reviews </Link>
+        <Link to="/about" className={css.link}>
+          who we are{" "}
+        </Link>
+        |
+        <Link to="/services" className={css.link}>
+          {" "}
+          services{" "}
+        </Link>
+        |
+        <Link to="/gallery" className={css.link}>
+          {" "}
+          gallery{" "}
+        </Link>
+        |
+        <Link to="/reviews" className={css.link}>
+          {" "}
+          reviews{" "}
+        </Link>
       </div>
       <div className={css.contactDetails}>
         <p>{NLFCopy.ContactDetails.phone}</p>
@@ -18,7 +34,9 @@ function Footer() {
       <p className={css.gatsbyCred}>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby </a>
+        {``}
+        by Olivia McLeod
       </p>
     </div>
   )

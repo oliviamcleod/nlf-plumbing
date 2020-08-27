@@ -1,3 +1,5 @@
+import images from "../images/shower-photo.jpg"
+
 const NLFCopy = {
   ContactDetails: {
     email: "email@email.com",
@@ -15,8 +17,16 @@ const NLFCopy = {
     content:
       "NLF Plumbing and Heating is a Moseley based company.  Nathan has over 20 years experience in the industry, working in both domestic and commercial sectors.  We pride ourselves in providing a prompt, reliable and friendly service at competitive rates.",
 
-    expanded:
-      "I left school to complete a four year apprenticeship and since then I have worked in a range of settings, including large building sites producing new build properties, 24 hour callout companies and alongside individual contractors working within homes. I have a young family so I understand the need for a warm house and hot water!  Efficiency and honesty is key when I’m invited into your property.  I can guarantee a fair quote, free of charge and good communication. I am GAS SAFE registered, which means I am legally permitted to work on gas.  You can search the register here.",
+    expanded: [
+      "I left school to complete a four year apprenticeship and since then I have worked in a range of settings, including large building sites producing new build properties, 24 hour callout companies and alongside individual contractors working within homes.",
+      "I have a young family so I understand the need for a warm house and hot water!  Efficiency and honesty is key when I’m invited into your property.  I can guarantee a fair quote, free of charge and good communication.",
+      "I am GAS SAFE registered, which means I am legally permitted to work on gas.",
+    ],
+    images: {
+      image1: images,
+      image2: "../images/shower-photo.jpg",
+      image3: "../images/shower-photo.jpg",
+    },
     link: "about",
   },
   Box2: {

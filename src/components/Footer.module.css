@@ -11,9 +11,16 @@
 
 .links {
   margin-bottom: 1rem;
+  text-decoration: none;
+
+  text-decoration-color: white;
+}
+
+.link {
+  color: white;
 }
 .contactDetails {
-  display: flex;
+  display: block;
   justify-content: space-between;
   margin-bottom: 0;
 }

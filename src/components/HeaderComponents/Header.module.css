@@ -1,0 +1,57 @@
+.headContainer {
+  position: sticky;
+  height: auto;
+  z-index: 10;
+  margin-bottom: 1rem;
+  top: 0;
+  background-color: white;
+}
+
+.callBtn {
+  position: fixed;
+  top: 1rem;
+  right: 4rem;
+  background-color: var(--blue);
+  padding: 0.5rem;
+  color: white;
+  font-size: 0.8rem;
+  border: none;
+  max-height: 3rem;
+  max-width: 5rem;
+  box-shadow: cornflowerblue 10px;
+}
+
+.headLogo {
+  height: 13vh;
+  margin: 1rem;
+}
+
+.links {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  width: 60vw;
+  justify-content: space-around;
+  text-align: center;
+  bottom: 7rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .headLogo {
+    position: relative;
+    left: 10%;
+    height: 15vh;
+  }
+  .callBtn {
+    position: relative;
+    left: 60%;
+    height: 15vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .links {
+    display: none;
+  }
+}

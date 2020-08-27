@@ -1,4 +1,4 @@
-.infoBox {
+.galleryPage {
   height: auto;
   background-color: var(--blue);
   background-image: linear-gradient(to right, var(--blue), rgb(143, 149, 241));
@@ -9,6 +9,18 @@
   text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.galleryGrid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+
+.galleryItem {
+  height: 90px;
+  width: 90px;
+  padding: 0.5rem;
+  object-fit: cover;
+}
 
 .title {
   position: relative;
@@ -18,19 +30,4 @@
   width: 30%;
   padding: 0.4rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.main {
-  font-size: 0.7rem;
-  text-align: left;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.photo {
-  height: 200px;
-  width: 200px;
-  margin: 2rem;
 }

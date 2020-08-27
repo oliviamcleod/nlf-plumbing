@@ -6,8 +6,16 @@ import css from "./InfoBox.module.css"
 import droplet from "../images/Droplet.svg"
 import flame from "../images/C5A06F6EFF90B99F.png"
 
-function InfoBox({ title, main, page, column1, column2, carousel }) {
-  console.log(main)
+function InfoBox({
+  title,
+  main,
+  page,
+  column1,
+  column2,
+  carousel,
+  expanded,
+  images,
+}) {
   return (
     <Link to={page} className={css.link}>
       {" "}
@@ -15,6 +23,11 @@ function InfoBox({ title, main, page, column1, column2, carousel }) {
         <h5 className={css.title}>{title}</h5>
         <div className={css.mainWrapper}>
           <p className={css.main}>{main}</p>
+          {images ? (
+            <img className={css.images} src={images.image1} />
+          ) : (
+            <div></div>
+          )}
           <div className={css.columnWrapper}>
             {" "}
             {column1 ? (
@@ -57,6 +70,17 @@ function InfoBox({ title, main, page, column1, column2, carousel }) {
                     </Carousel.Item>
                   ))}
                 </Carousel>
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {expanded ? (
+              <div className={css.expandedWrapper}>
+                {expanded.map((item, i) => (
+                  <p className={css.expanded}>
+                    {item} <img className={css.images} src={images.image1} />
+                  </p>
+                ))}
               </div>
             ) : (
               <div></div>

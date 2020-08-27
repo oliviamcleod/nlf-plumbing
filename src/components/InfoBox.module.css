@@ -4,24 +4,30 @@
   background-image: linear-gradient(to right, var(--blue), rgb(143, 149, 241));
   margin-top: 0.5rem;
   margin-bottom: 2rem;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title {
   position: relative;
-  margin: 0 auto;
+  margin: 1rem auto;
+  background-color: white;
+  color: var(--blue);
+  width: 30%;
+  padding: 0.4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mainWrapper {
   position: relative;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   width: 90%;
 }
 
 .main {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: left;
   font-family: var(--font2);
 }
@@ -37,7 +43,7 @@
 
 .column {
   font-family: var(--font2);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: left;
   padding-left: 0;
   column-width: 50%;
@@ -45,9 +51,11 @@
 }
 
 .listIcon {
-  display: block;
+  /* display: block; */
+  position: relative;
+  left: 10%;
+
   height: 2rem;
-  text-align: center;
   margin: 0.7rem;
 }
 .carousel {
@@ -71,4 +79,35 @@
   margin: 1rem;
   font-size: 0.7rem;
   font-style: italic;
+}
+
+.expanded {
+  margin-top: 1rem;
+  /* display: flex; */
+  font-family: var(--font2);
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.images {
+  position: relative;
+  margin: 1rem auto;
+  height: 10rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+  }
+  .expanded {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+
+    margin-top: 1rem;
+  }
 }
