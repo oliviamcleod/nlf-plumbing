@@ -19,7 +19,9 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-image-gallery": "^1.0.8",
+    "react-modal": "^3.11.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"

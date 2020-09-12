@@ -62,19 +62,19 @@ const NLFCopy = {
     title: "Reviews",
     reviews: [
       {
-        review:
+        original:
           '"Very impressed with the service provided, always very prompt and provides great service.  we have used NLF for a few jobs and would certainly recommend to others."',
         reviewer: "Gemma, Moseley",
       },
 
       {
-        review:
+        original:
           '"Nathan has done various bits of work for us, all to a very high standard and a lovely guy.  Recommend."',
         reviewer: "Ben, Moseley",
       },
 
       {
-        review:
+        original:
           '"NLF was very professional and helpful from booking the job, to completion.  I wouldn’t hesitate to recommend and I will be using them again for future work."',
         reviewer:
           "Patrick Collins, Managing Director, Collins Building Partnership Ltd",
