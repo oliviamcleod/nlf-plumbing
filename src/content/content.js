@@ -2,8 +2,8 @@ import images from "../images/shower-photo.jpg"
 
 const NLFCopy = {
   ContactDetails: {
-    email: "email@email.com",
-    phone: "+44 7777 123 4567",
+    email: "n_fage@icloud.com",
+    phone: "+44 7976 183602",
   },
   BlogBox: {
     image:
@@ -15,7 +15,7 @@ const NLFCopy = {
   Box1: {
     title: "Who we are",
     content:
-      "NLF Plumbing and Heating is a Moseley based company.  Nathan has over 20 years experience in the industry, working in both domestic and commercial sectors.  We pride ourselves in providing a prompt, reliable and friendly service at competitive rates.",
+      "NLF Plumbing and Heating is a plumbing business based in Moseley, Birmingham.  Nathan has over 20 years experience in the industry, working in both domestic and commercial sectors.  We pride ourselves in providing a prompt, reliable and friendly service at competitive rates.",
 
     expanded: [
       "I left school to complete a four year apprenticeship and since then I have worked in a range of settings, including large building sites producing new build properties, 24 hour callout companies and alongside individual contractors working within homes.",

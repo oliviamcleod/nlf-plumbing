@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import InfoBox from "../components/InfoBox"
-
 import Layout from "../components/Layout"
 import GalleryPage from "../components/Gallery/GalleryPage"
 

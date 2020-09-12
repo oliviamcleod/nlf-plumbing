@@ -9,7 +9,7 @@ import GalleryModal from "./Modal"
 function GalleryPage() {
   const [modalShow, setModalShow] = useState(false)
   const [imageDisplayed, setImageDisplayed] = useState("")
-
+  console.log(modalShow)
   console.log(imageDisplayed)
 
   return (

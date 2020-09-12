@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import InfoBox from "../components/InfoBox"
+import InfoBox from "../components/InfoBoxes"
 
 import Layout from "../components/Layout"
 
@@ -12,7 +11,12 @@ function Services() {
   return (
     // <SEO title="Home" />
     <Layout>
-      <InfoBox title={NLFCopy.Box3.title} />
+      <InfoBox
+        title={NLFCopy.Box3.title}
+        main={NLFCopy.Box3.content1}
+        column1={NLFCopy.Box3.content2}
+        column2={NLFCopy.Box3.content3}
+      />
 
       <GasSafeLogo />
     </Layout>

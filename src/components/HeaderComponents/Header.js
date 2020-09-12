@@ -23,12 +23,26 @@ function Header() {
       <a href={NLFCopy.ContactDetails.phone} className={css.callBtn}>
         Call Us
       </a>
-      <div className={css.links}>
-        <Link to="/about">who we are </Link>|
-        <Link to="/services"> services </Link>|
-        <Link to="/gallery"> gallery </Link>|
-        <Link to="/reviews"> reviews </Link>
-      </div>
+      {/* <div className={css.links}>
+        <Link to="/about" className={css.link}>
+          who we are{" "}
+        </Link>
+        |
+        <Link to="/services" className={css.link}>
+          {" "}
+          services{" "}
+        </Link>
+        |
+        <Link to="/gallery" className={css.link}>
+          {" "}
+          gallery{" "}
+        </Link>
+        |
+        <Link to="/reviews" className={css.link}>
+          {" "}
+          reviews{" "}
+        </Link>
+      </div> */}
       <Burger open={open} setOpen={setOpen} />
       <BurgerMenu open={open} setOpen={setOpen} />
     </div>

@@ -7,16 +7,16 @@ import css from "./BurgerMenu.module.css"
 function BurgerMenu({ open }) {
   return (
     <div className={open ? css.openMenu : css.burgerMenu} open={open}>
-      <Link to="/about" className={css.menuText}>
+      <Link to="/about" className={open ? css.menuText : null}>
         Who we are
       </Link>
-      <Link to="/gallery" className={css.menuText}>
+      <Link to="/gallery" className={open ? css.menuText : null}>
         Gallery
       </Link>
-      <Link to="/services" className={css.menuText}>
+      <Link to="/services" className={open ? css.menuText : null}>
         What we do
       </Link>
-      <Link to="/reviews" className={css.menuText}>
+      <Link to="/reviews" className={open ? css.menuText : null}>
         Reviews
       </Link>
     </div>

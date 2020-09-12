@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import InfoBox from "../components/InfoBox"
+import InfoBox from "../components/InfoBoxes"
 import BlogBox from "../components/BlogBox"
 import GalleryBox from "../components/GalleryBox"
 import Layout from "../components/Layout"

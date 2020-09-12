@@ -35,8 +35,6 @@ function Footer() {
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby </a>
-        {``}
-        by Olivia McLeod
       </p>
     </div>
   )
