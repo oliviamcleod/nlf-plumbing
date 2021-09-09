@@ -1,9 +1,8 @@
-import images from "../images/shower-photo.jpg"
-
+import images from "../images/workPhotos"
 const NLFCopy = {
   ContactDetails: {
     email: "n_fage@icloud.com",
-    phone: "+44 7976 183602",
+    phone: "+447976183602",
   },
   BlogBox: {
     image:
@@ -23,9 +22,9 @@ const NLFCopy = {
       "I am GAS SAFE registered, which means I am legally permitted to work on gas.",
     ],
     images: {
-      image1: images,
-      image2: "../images/shower-photo.jpg",
-      image3: "../images/shower-photo.jpg",
+      image1: images[0].thumbnail,
+      image2: images[1].thumbnail,
+      image3: images[2].thumbnail,
     },
     link: "about",
   },
@@ -62,19 +61,19 @@ const NLFCopy = {
     title: "Reviews",
     reviews: [
       {
-        original:
+        originalTitle:
           '"Very impressed with the service provided, always very prompt and provides great service.  we have used NLF for a few jobs and would certainly recommend to others."',
         reviewer: "Gemma, Moseley",
       },
 
       {
-        original:
+        originalTitle:
           '"Nathan has done various bits of work for us, all to a very high standard and a lovely guy.  Recommend."',
         reviewer: "Ben, Moseley",
       },
 
       {
-        original:
+        originalTitle:
           '"NLF was very professional and helpful from booking the job, to completion.  I wouldn’t hesitate to recommend and I will be using them again for future work."',
         reviewer:
           "Patrick Collins, Managing Director, Collins Building Partnership Ltd",

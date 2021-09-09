@@ -12,3 +12,7 @@
   --font1: "PT Mono";
   --font2: "Roboto";
 }
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 60vh;
+}

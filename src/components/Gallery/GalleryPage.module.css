@@ -10,18 +10,6 @@
   font: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.galleryGrid {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-}
-
-.galleryItem {
-  height: 90px;
-  width: 90px;
-  padding: 0.5rem;
-  object-fit: cover;
-}
 
 .title {
   position: relative;
@@ -31,4 +19,8 @@
   width: 30%;
   padding: 0.4rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 70vh;
 }

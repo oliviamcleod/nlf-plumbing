@@ -1,9 +1,11 @@
 import img1 from "./shower-photo.jpg"
-import img2 from "./C5A06F6EFF90B99F.png"
-import img3 from "./Gas_Safe_Register_logo_symbol.png"
-import img4 from "./Droplet.svg"
-import img5 from "./NLF-Logo-Final.svg"
-import img6 from "./NLF-LogoCompactFinal.svg"
+import img2 from "./workphoto1.jpg"
+import img3 from "./workphoto2.jpg"
+import img4 from "./workphoto3.jpg"
+import img5 from "./workphoto4.jpg"
+import img6 from "./workphoto5.jpg"
+import img7 from "./workphoto6.jpg"
+import img8 from "./workphoto7.jpg"
 
 const workPhotos = [
   {
@@ -29,6 +31,14 @@ const workPhotos = [
   {
     original: img6,
     thumbnail: img6,
+  },
+  {
+    original: img7,
+    thumbnail: img7,
+  },
+  {
+    original: img8,
+    thumbnail: img8,
   },
 ]
 

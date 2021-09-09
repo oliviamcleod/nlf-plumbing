@@ -9,11 +9,13 @@ function GalleryPage() {
   return (
     <div className={css.galleryPage}>
       <h5 className={css.title}>{NLFCopy.Box2.title}</h5>
-      <ImageGallery
-        items={workPhotos}
-        showPlayButton={false}
-        showFullscreenButton={false}
-      />
+      <div>
+        <ImageGallery
+          items={workPhotos}
+          showPlayButton={false}
+          showFullscreenButton={false}
+        />
+      </div>
     </div>
   )
 }

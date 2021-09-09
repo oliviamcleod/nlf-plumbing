@@ -13,14 +13,14 @@ function GalleryBox({ title, main, list, page }) {
         {" "}
         <h5 className={css.title}>{title}</h5>
       </Link>
-      <div className={css.photo}>
-        <ImageGallery
-          items={images}
-          showThumbnails={false}
-          showPlayButton={false}
-          showBullets={true}
-        />
-      </div>
+      {/* <div className={css.photo}> */}
+      <ImageGallery
+        items={images}
+        showThumbnails={false}
+        showPlayButton={false}
+        showBullets={true}
+      />
+      {/* </div> */}
     </div>
   )
 }

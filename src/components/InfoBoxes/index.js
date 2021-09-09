@@ -16,7 +16,6 @@ function InfoBox({
   expanded,
   images,
 }) {
-  console.log(carousel)
   return (
     <Link to={page} className={css.link}>
       {" "}
@@ -25,7 +24,7 @@ function InfoBox({
         <div className={css.mainWrapper}>
           <p className={css.main}>{main}</p>
           {images ? (
-            <img className={css.images} src={images.image1} />
+            <img className={css.images} src={images.image2} />
           ) : (
             <div></div>
           )}
